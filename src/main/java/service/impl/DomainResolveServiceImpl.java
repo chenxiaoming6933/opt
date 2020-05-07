@@ -48,6 +48,9 @@ public class DomainResolveServiceImpl implements DomainResolveService {
                 //插入数据  域名存在更新 否则插入
                 ElasticsearchUtil.insertDomain(saveObject);
 
+                //处理完成
+                LogUtil.info("任务结束！");
+
             }
 
         } catch (NumberFormatException e) {
