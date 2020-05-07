@@ -50,6 +50,7 @@ public class DomainResolveServiceImpl implements DomainResolveService {
 
                 //处理完成
                 LogUtil.info("任务结束！");
+                LogUtil.info("测试提交远程库");
 
             }
 
